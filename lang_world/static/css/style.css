@@ -1,0 +1,17 @@
+.row .col-sm-2 {
+    background: yellow;
+}
+
+.row .col-sm {
+
+    margin: auto 10px;
+}
+
+.row .col-sm-12 {
+    background: red;
+    margin: 0 0 10px 0;
+}
+
+.card {
+    margin: 5px;
+}

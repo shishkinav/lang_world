@@ -1,0 +1,85 @@
+
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="header">
+
+        {% include 'mainapp/includes/inc_main_menu.html' %}
+
+        <div class="trending">
+            <h3>TRENDING</h3>
+            <h1>FISHNET CHAIR</h1>
+            <p>Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black
+            or highly polished chrome.</p>
+            <a href="#" >ORDER US</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="block_1">
+            <ul class="menu">
+            <li><a href="#" >Featured</a></li>
+            <li><a href="#" >New</a></li>
+            </ul>
+            <p><a href="#" >EXPLORE ALL ></a></p>
+            <div class="image_block">
+                <a href="#" title="block1_1"></a>
+                <a href="#" title="block1_2"></a>
+                <a href="#" title="block1_3"></a>
+                <a href="#" title="block1_4"></a>
+            </div>
+        </div>
+        <div class="block_2">
+            <img src="{% static 'img/block2_1.jpg' %}" alt="Эксклюзив 1">
+                <div class="exclusive_1">
+                    <h4>EXCLUSIVE</h4>
+                    <h2>Fishnet Chair</h2>
+                    <p>Seat and back with upholstery made of cold cure foam. Steel frame, available in matt.</p>
+                    <a href="#">ORDER US</a>
+                </div>
+            <img src="{% static 'img/block2_2.jpg' %}" alt="Эксклюзив 2">
+                <div class="exclusive_2">
+                    <h4>EXCLUSIVE</h4>
+                    <h2>Fishnet Chair</h2>
+                    <p>Seat and back with upholstery made of cold cure foam. Steel frame, available in matt.</p>
+                    <a href="#">ORDER US</a>
+                </div>
+        </div>
+        <div class="block_3">
+            <p>Trending Products</p>
+            <a href="#" target="_parent">EXPLORE ALL ></a>
+            <div class="trendingProducts">
+                <a href="#" target="_blank"><img src="{% static 'img/trendingProduct_1.jpg' %}" alt="подвесная лампа"></a>
+                <a href="#" target="_blank"><img src="{% static 'img/trendingProduct_2.jpg' %}" alt="декоративное кресло"></a>
+                <a href="#" target="_blank"><img src="{% static 'img/trendingProduct_3.jpg' %}" alt="стильная лампа"></a>
+                <a href="#" target="_blank"><img src="{% static 'img/trendingProduct_4.jpg' %}" alt="настенная лампа"></a>
+                <a href="#" target="_blank"><img src="{% static 'img/trendingProduct_5.jpg' %}" alt="каменная толкушка"></a>
+                <a href="#" target="_blank"><img src="{% static 'img/trendingProduct_6.jpg' %}" alt="глиняная лампа"></a>
+            </div>
+        </div>
+        <div class="block_4">
+            <div class="hotDeal">
+                <h3>HOT DEAL</h3>
+                <h1>FISHNET CHAIR</h1>
+                <p>Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black.</p>
+                <a href="#" >ORDER US</a>
+            </div>
+        </div>
+        <div class="block_5">
+            <a href="#" target="_blank" style="height: 570px; width: 570px;"><img src="{% static 'img/block_5_0.jpg' %}" alt="эксплюзив"></a>
+            <a href="#" target="_blank"><img src="{% static 'img/block_5_1.jpg' %}" alt="старинная настенная лампа"></a>
+            <a href="#" target="_blank"><img src="{% static 'img/block_5_2.jpg' %}" alt="мягкий диван"></a>
+            <a href="#" target="_blank"><img src="{% static 'img/block_5_3.jpg' %}" alt="выпуклые часы"></a>
+            <a href="#" target="_blank"><img src="{% static 'img/block_5_4.jpg' %}" alt="потолочный плафон"></a>
+            <div class="exclusive">
+                <h4>EXCLUSIVE</h4>
+                <h2>Fishnet Chair</h2>
+                <p>Seat and back with upholstery made of cold cure foam. Steel frame, available in matt.</p>
+                <a href="#">ORDER US</a>
+             </div>
+
+        </div>
+    </div>
+{% endblock %}
+

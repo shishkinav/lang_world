@@ -1,0 +1,194 @@
+
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-sm-12">
+            верхушка
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-sm-2">
+            <button type="button" class="btn btn-primary badge-secondary btn-block">
+                Уведомления <span class="badge badge-light">4</span>
+            </button>
+            <button type="button" class="btn btn-light btn-block">Светлый</button>
+            <button type="button" class="btn btn-outline-dark btn-block">Темный</button>
+
+            <div class="menu">
+                <a class="dropdown-item" href="#">Regular link</a>
+                <a class="dropdown-item active" href="#">Active link</a>
+                <a class="dropdown-item" href="#">Another link</a>
+            </div>
+
+        </div>
+
+        <div class="col-sm">
+
+            <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Кнопка выпадающего списка
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Example file input</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+            </div>
+
+            <div class="card-group">
+
+                <div class="card">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                            <h5 class="card-title">Название карточки</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                      </div>
+                </div>
+
+
+                <div class="card">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                            <h5 class="card-title">Название карточки</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                      </div>
+                </div>
+
+
+                <div class="card">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                            <h5 class="card-title">Название карточки</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                      </div>
+                </div>
+
+                <div class="card">
+                      <img src="..." class="card-img-top" alt="...">
+                      <div class="card-body">
+                            <h5 class="card-title">Название карточки</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                      </div>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                  <div class="card-header">
+                        Featured
+                  </div>
+                  <div class="card-body">
+                        <h5 class="card-title">Специальный заголовок</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                        2 days ago
+                  </div>
+            </div>
+
+            <div class="card text-center">
+                  <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                              <li class="nav-item">
+                                    <a class="nav-link active" href="#">Active</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">Disabled</a>
+                              </li>
+                        </ul>
+                  </div>
+                  <div class="card-body">
+                        <h5 class="card-title">Специальный заголовок</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+                  </div>
+            </div>
+
+            <p>
+                  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Ссылка с href
+                  </a>
+                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Кнопка с data-target
+                  </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                  </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-sm-2">
+          Одна из трёх колонок
+        </div>
+      </div>
+{% endblock %}
+

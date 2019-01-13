@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>
+        {% block title %}
+            Interior - {{ name|title }} Page
+        {% endblock %}
+    </title>
+
+
+    {% block css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_hot.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    {% endblock %}
+
+
+    {% block js %}
+
+    {% endblock %}
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h3 style="font-family: Montserrat; color: #43a047">
+            {% now "j F Y  "​ %}
+        </h3>
+
+        {% block menu %}
+
+        {% endblock %}
+
+
+        {% block content %}
+
+        {% endblock %}
+
+
+        {% block footer %}
+            <div class="footer">
+                    <div class="block_6">
+                        <div class="textBlock6">
+                            <h4>MOBILE APP</h4>
+                            <h2>FIND. FOLLOW. FAVORITE.</h2>
+                            <p>Save your favourites and share your style.</p>
+                            <a href="#"><img src="{% static 'img/block6_1.jpg' %}" alt="кнопка загрузку в AppStore"></a>
+                            <a href="#"><img src="{% static 'img/block6_2.jpg' %}" alt="кнопка загрузку в GooglePlay"></a>
+                        </div>
+                    </div>
+                <div class="contacts">
+                    <div class="contactUs">
+                        <h3>CONTACT US</h3>
+                        <p>132A Bridge Road Richmond VIC Australia.<br><br>Talk to us on 1300 132<br>info@interior.com</p>
+                    </div>
+                    <div class="useful">
+                        <h3>USEFUL INFORMATION</h3>
+                        <ul>
+                            <li><a href="#">SALES TERMS</a></li>
+                            <li><a href="#">ARCHITECT ACCOUNTS</a></li>
+                            <li><a href="#">CUSTOMER CARE</a></li>
+                            <li><a href="#">CAREERS</a></li>
+                            <li><a href="#">DELIVERY</a></li>
+                            <li><a href="#">EXCHANGES & RETURNS</a></li>
+                        </ul>
+                    </div>
+                    <div class="letStay">
+                        <h3>LET'S STAY IN TOUCH!</h3>
+                        <p>Suscribe to know about our latest news. products and special offers just for subscribers.</p>
+                        <input type="email" placeholder="your email address">
+                        <a href="#"><img src="{% static 'img/sendMail.png' %}" alt="Отправить" class="sendMail"></a>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; COPYRIGHT - INTERIOR 2016. ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <div class="socialSimbol">
+                        <div class="social facebook">
+                            <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                        </div>
+                        <div class="social twitter">
+                            <a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                        </div>
+                        <div class="social google-pluse">
+                            <a href="#" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+                        </div>
+                        <div class="social pinterest">
+                            <a href="#" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a>
+                        </div>
+                    </div>
+                    <div class="terms">
+                        <p>TERMS & CONDITIONS / PRIVACY POLICY & COOKIES</p>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+
+    </div>
+
+</body>
+</html>
